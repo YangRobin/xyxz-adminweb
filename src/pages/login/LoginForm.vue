@@ -1,7 +1,9 @@
 
 <template>
    <div class="login-form">
-     <div class="form-item">
+     <h3>欢迎登陆面对面</h3>
+
+      <div class="form-item">
         <label for="">name</label>
       <div>
         <input type="text">
@@ -14,7 +16,8 @@
       </div>
      </div>
      <div class="form-item">
-       <button> 登陆</button>
+       <button>登陆</button>
+       <span>注册</span>
      </div>
    </div>
 </template>

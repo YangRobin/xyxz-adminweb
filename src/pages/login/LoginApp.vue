@@ -4,18 +4,21 @@
      <div>
        <LoginForm></LoginForm>
      </div>
+     <FooterBar></FooterBar>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import Navbar from '../../components/Navbar.vue';
-import LoginForm from '../../components/LoginForm.vue';
+import FooterBar from '../../components/FooterBar.vue';
+import LoginForm from './LoginForm.vue';
 
 @Component({
   components: {
     Navbar,
     LoginForm,
+    FooterBar,
   },
 })
 export default class LoginApp extends Vue {
