@@ -37,6 +37,14 @@ module.exports = {
          //output as dist/index.html
          filename: 'login.html'
      },
+     register: {
+        // entry for the page
+         entry: 'src/pages/register/register.ts',
+         //the source template
+         template: 'public/register.html',
+         //output as dist/index.html
+         filename: 'register.html'
+     },
       // when using the entry-only string format,
       // template is inferred to be `public/subpage.html`
       // and falls back to `public/index.html` if not found.
