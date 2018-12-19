@@ -29,6 +29,9 @@ export default class Navbar extends Vue {
            margin-right: 20px;
            height: 30px;
            line-height: 30px;
+           &:hover{
+             color:blue
+           }
         }
       }
     }
