@@ -25,7 +25,6 @@
       <div class="form-btn">
         <button class="login">Login</button>
         <button class="out">Sign up</button>
-        <a href="">sdf</a>
           <!-- <el-button type="primary">主要按钮</el-button> -->
       </div>
      </div>
