@@ -27,6 +27,7 @@
         <button class="out">Sign up</button>
         <p>我又在分支上改变了撒旦法</p>
         <p>我测试最后一步推送到其他分支</p>
+        <p>测试其他分支</p>
           <!-- <el-button type="primary">主要按钮</el-button> -->
       </div>
      </div>
