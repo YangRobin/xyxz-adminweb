@@ -16,7 +16,7 @@
         </div>
         <div class="form-item">
           <label for="">密码</label>
-          <input type="text" name="passworld" placeholder="......">
+          <input type="text" name="passworld" placeholder="输入密码">
         </div>
         <p class="form-bj">
           <input type="checkbox"> rember me
@@ -25,6 +25,7 @@
       <div class="form-btn">
         <button class="login">Login</button>
         <button class="out">Sign up</button>
+        <a href="javascript:;">asdfsa</a>
           <!-- <el-button type="primary">主要按钮</el-button> -->
       </div>
      </div>
