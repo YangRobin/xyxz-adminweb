@@ -25,7 +25,7 @@
       <div class="form-btn">
         <button class="login">Login</button>
         <button class="out">Sign up</button>
-        <a href="javascript:;">asdfsa</a>
+        <p>我又在分支上改变了撒旦法</p>
           <!-- <el-button type="primary">主要按钮</el-button> -->
       </div>
      </div>
