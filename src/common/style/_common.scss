@@ -1,0 +1,31 @@
+
+
+//警告:通用工具类必须具备通用性,不能有重复,多余的样式
+//在添加了一个通用类时,必须注明其用途
+html,body{
+  height: 100%;
+}
+body,ul{
+  padding:0;
+  margin:0,
+}
+div,ul,ol,main,footer,section,aside,header,nav,li,ol{
+  margin:0 auto;
+}
+
+
+// @author:robin.yang
+// @desc:左浮动通用类
+.fl{
+  float: left;
+}
+
+// @author:robin.yang
+// @desc:创建bfc通用类
+.bfc{
+  overflow: hidden;
+}
+
+.row{
+  display:flex;
+}

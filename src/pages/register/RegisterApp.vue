@@ -2,18 +2,16 @@
 <template>
    <div>register
 
-      <Navbar></Navbar>
+      <!-- <Navbar></Navbar> -->
    </div>
 </template>
 <script lang="ts">
-import Navbar from '../../components/Navbar.vue';
-import LoginForm from '../../components/LoginForm.vue';
 import { Component, Prop, Vue } from 'vue-property-decorator';
-@Component({
-  components: {
-    Navbar,
-  },
-})
+// @Component({
+//   components: {
+
+//   }
+// })
 export default class RegisterApp extends Vue {
   @Prop() private msg!: string;
 }
