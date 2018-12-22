@@ -1,0 +1,38 @@
+@media (min-width:$lg) {
+  .container {
+    max-width: $lg;
+  }
+  .hidden-lg{
+    display: none;
+  }
+  
+  @for $i from 1 through $column { 
+      .col-lg-#{$i} { width: make-col($i) };
+  }
+}
+
+// @media (min-width:$md) {
+//   .container {
+//     max-width: $md;
+//   }
+//   .hidden-md{
+//     display: none;
+//   }
+  
+//   @for $i from 1 through $column { 
+//       .col-md-#{$i} { width: make-col($i) };
+//   }
+// }
+
+@media (max-width:$sm) {
+  .container {
+    max-width: $sm;
+  }
+  .hidden-sm{
+    display: none;
+  }
+  
+  @for $i from 1 through $column { 
+      .col-sm-#{$i} { width: make-col($i) };
+  }
+}

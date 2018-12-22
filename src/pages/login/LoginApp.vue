@@ -10,8 +10,8 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import Navbar from '../../components/Navbar.vue';
-import FooterBar from '../../components/FooterBar.vue';
+import Navbar from './../Navbar.vue';
+import FooterBar from './../FooterBar.vue';
 import LoginForm from './LoginForm.vue';
 
 @Component({

@@ -127,6 +127,5 @@ export default class LoginForm extends Vue {
          }
        }
     }
-    
   }
 </style>
