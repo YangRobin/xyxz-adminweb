@@ -35,7 +35,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class LoginForm extends Vue {
-  @Prop() private msg!: string;
+  @Prop() private msg!: string;//////
 }
 </script>
 <style lang="scss" scoped>
