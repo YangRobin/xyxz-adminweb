@@ -1,7 +1,7 @@
 
 const menu = [
   {
-    name: 'home',
+    name: '首页',
     icon: 'home',
     path: '/',
     subs: [
@@ -9,19 +9,19 @@ const menu = [
         name: 'sub-home',
         icon: 'sub-home',
         path: '/sub-home',
-      }
+      },
     ],
   },
   {
-    name: 'about',
+    name: '关于',
     icon: 'about',
     path: '/about',
     subs: [
       {
         name: 'sub-about',
         icon: 'sub-about',
-        path: '/sub-about',
-      }
+        path: '/about/sub-about',
+      },
     ],
   },
 ];

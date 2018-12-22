@@ -9,7 +9,7 @@ body,ul{
   padding:0;
   margin:0,
 }
-div,ul,ol,main,footer,section,aside,header,nav,li,ol{
+div,main,footer,section,aside,header,nav,li,ol{
   margin:0 auto;
 }
 
@@ -28,4 +28,5 @@ div,ul,ol,main,footer,section,aside,header,nav,li,ol{
 
 .row{
   display:flex;
+  flex-wrap: wrap;
 }

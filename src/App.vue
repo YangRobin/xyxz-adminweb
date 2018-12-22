@@ -32,7 +32,6 @@ export default class App extends Vue {
   subMenuVisible:boolean=false;
   private toggleSubMenu (e: any) {
     this.subMenuVisible=!this.subMenuVisible;
-    console.log(this.subMenuVisible)
   }
 }
 </script>
