@@ -11,7 +11,7 @@
     <div class="sub-menu" v-show="subMenuVisible">
       <button @click="closeSub()">close sub</button>
       <ul>
-        <li v-for="i in subMenu" @click="toggle(i.name)">
+        <li v-for="i in subMenu">
           <router-link :to="i.path">{{i.name}}</router-link>
         </li>
       </ul>
@@ -30,9 +30,6 @@ export default class LeftMenu extends Vue {
   subMenu: object = {};
   mounted() {
     this.menu = menu;
-    menu.forEach(i => {
-      console.log(i);
-    });
   }
   public toggle(name: string) {
     //判断点击的路由 是否是当前路由

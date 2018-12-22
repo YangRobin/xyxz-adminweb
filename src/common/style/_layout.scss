@@ -2,12 +2,19 @@
   .container {
     max-width: $lg;
   }
-  .hidden-lg{
+
+  .hidden-lg {
     display: none;
   }
-  
-  @for $i from 1 through $column { 
-      .col-lg-#{$i} { width: make-col($i) };
+
+  @for $i from 1 through $column {
+    .col-lg-#{$i} {
+      flex-basis: 0;
+      flex-grow: 1;
+      // width: make-col($i)
+    }
+
+    ;
   }
 }
 
@@ -18,7 +25,7 @@
 //   .hidden-md{
 //     display: none;
 //   }
-  
+
 //   @for $i from 1 through $column { 
 //       .col-md-#{$i} { width: make-col($i) };
 //   }
@@ -28,11 +35,18 @@
   .container {
     max-width: $sm;
   }
-  .hidden-sm{
+
+  .hidden-sm {
     display: none;
   }
-  
-  @for $i from 1 through $column { 
-      .col-sm-#{$i} { width: make-col($i) };
+
+  @for $i from 1 through $column {
+    .col-sm-#{$i} {
+      flex-basis: 0;
+      flex-grow: 1;
+      // width: make-col($i)
+    }
+
+    ;
   }
 }
