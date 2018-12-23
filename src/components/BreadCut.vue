@@ -1,15 +1,17 @@
 <template>
-  <div class="row">
-    <span>你当前的位置</span>
-    <ul class="bread-cut">
-      <li v-for="i in paths">/{{i.name}}</li>
+  <div class="row bread-cut">
+    <span>你当前的位置:
+      <br>
+    </span>
+    <ul>
+      <li v-for="i in paths">>{{i.name}}</li>
     </ul>
   </div>
 </template>
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import menu from "../menu";
-import { mount } from '@vue/test-utils';
+import { mount } from "@vue/test-utils";
 @Component
 export default class BreadCut extends Vue {
   @Prop() private msg!: string;
@@ -47,7 +49,11 @@ export default class BreadCut extends Vue {
 }
 </script>
 <style lang="scss" scoped>
-ul.bread-cut {
+.bread-cut {
+  background-color: white;
+  padding: 5px 5px;
+  color: #999999;
+  font-size: 12px;
   li {
     float: left;
     list-style: none;

@@ -7,7 +7,7 @@ import UserDelete from './views/UserDelete.vue';
 
 const menu = [
   {
-    name: '首页',
+    name: '首页统计',
     icon: 'icon-home',
     path: '/',
     component: Home,
@@ -15,7 +15,7 @@ const menu = [
       {
         name: 'sub-home',
         icon: 'sub-home',
-        path: 'sub-home',
+        path: '/sub-home',
         component: SubHome,
       },
     ],

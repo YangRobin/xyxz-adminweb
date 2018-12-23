@@ -3,15 +3,15 @@
     <div class="main-menu">
       <div class="avator"></div>
       <ul class="links">
-        <li v-for="i in menu" @click="toggle(i.name)">
+        <li  v-for="i in menu" @click="toggle(i.name)">
           <router-link :to="i.path">{{i.name}}</router-link>
         </li>
       </ul>
     </div>
     <div class="sub-menu" v-show="subMenuVisible">
-      <button @click="closeSub()">close sub</button>
+      <span @click="closeSub()">X</span>
       <ul>
-        <li v-for="i in subMenu">
+        <li  class="active-path" v-for="i in subMenu">
           <router-link :to="i.path">{{i.name}}</router-link>
         </li>
       </ul>
@@ -66,25 +66,51 @@ export default class LeftMenu extends Vue {
 </script>
 <style lang="scss" scoped>
 .left-menu {
-  color: white;
+  color: #4e5f5b;
   display: flex;
   height: 100%;
   .main-menu {
     width: 230px;
-    background-color: #222430;
+    background-color: #ffffff;
+
     .avator {
       margin-top: 10px;
       width: 50px;
       height: 50px;
-      background: #29ebff;
+      background: #0a1213;
       border-radius: 50%;
       text-align: center;
+    }
+    ul {
+      margin-top: 10px;
+      li {
+        height: 26px;
+        line-height: 26px;
+        a {
+          color: #5c7ffc;
+        }
+      }
     }
   }
   .sub-menu {
     flex: 1 1 auto;
     width: 60%;
-    background-color: gray;
+    background-color: #fcfcfd;
+    span {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    ul {
+      margin-top: 30px;
+      li {
+        height: 26px;
+        line-height: 26px;
+        a {
+          color: #5c7ffc;
+        }
+      }
+    }
   }
 }
 </style>
