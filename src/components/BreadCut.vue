@@ -38,8 +38,8 @@ export default class BreadCut extends Vue {
       if (i.path === path) {
         this.paths.push(i);
       } else {
-        if (i.subs) {
-          this.getName(i.subs, path);
+        if (i.children) {
+          this.getName(i.children, path);
         }
       }
     });

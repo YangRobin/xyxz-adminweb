@@ -8,10 +8,11 @@
   }
 
   @for $i from 1 through $column {
+    
     .col-lg-#{$i} {
       flex-basis: 0;
       flex-grow: 1;
-      // width: make-col($i)
+      width: #{$i/$column*100};
     }
 
     ;

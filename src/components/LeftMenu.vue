@@ -39,13 +39,13 @@ export default class LeftMenu extends Vue {
       const currentMenu = menu.find(i => {
         return i.name === name;
       });
-      this.subMenu = currentMenu ? currentMenu.subs : {};
+      this.subMenu = currentMenu ? currentMenu.children : {};
     } else {
       //
       const currentMenu = menu.find(i => {
         return i.name === name;
       });
-      this.subMenu = currentMenu ? currentMenu.subs : {};
+      this.subMenu = currentMenu ? currentMenu.children : {};
       if (this.subMenuVisible) {
         this.name = name;
       } else {
@@ -68,7 +68,6 @@ export default class LeftMenu extends Vue {
 .left-menu {
   color: white;
   display: flex;
-  // justify-content: stretch;
   height: 100%;
   .main-menu {
     width: 230px;
