@@ -12,7 +12,9 @@ body,ul{
 div,main,footer,section,aside,header,nav,li,ol{
   margin:0 auto;
 }
-
+a{
+  text-decoration: none;
+}
 
 // @author:robin.yang
 // @desc:左浮动通用类

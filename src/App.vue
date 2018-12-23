@@ -5,7 +5,11 @@
       <div class="left fl" :class="subMenuVisible ? 'sub-menu-show':'sub-menu-hide'">
         <LeftMenu v-on:toggle-sub="toggleSubMenu"/>
       </div>
-      <div class="right bfc" :class="subMenuVisible ?'m-left-show': 'm-left-hide'" style="height:500px;">
+      <div
+        class="right bfc"
+        :class="subMenuVisible ?'m-left-show': 'm-left-hide'"
+        style="height:500px;"
+      >
         <BreadCut/>
         <router-view/>
         <Footer/>
@@ -29,9 +33,9 @@ import BreadCut from "@/components/BreadCut.vue";
 })
 export default class App extends Vue {
   //子菜单显示开关
-  subMenuVisible:boolean=false;
-  private toggleSubMenu (e: any) {
-    this.subMenuVisible=!this.subMenuVisible;
+  subMenuVisible: boolean = false;
+  private toggleSubMenu(e: any) {
+    this.subMenuVisible = !this.subMenuVisible;
   }
 }
 </script>
@@ -41,9 +45,11 @@ export default class App extends Vue {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #5c7ffc;
   position: relative;
+  font-size: 14px;
   height: 100%;
+  background: #f5f5f5;
 }
 #nav {
   padding: 30px;
@@ -55,27 +61,36 @@ export default class App extends Vue {
     }
   }
 }
+li {
+  list-style: none;
+}
 //
 .left {
-  width:200px;
+  width: 200px;
   // background-color:blue;
   height: 100%;
   position: fixed;
 }
 //子菜单显示的样式
-.sub-menu-show{
-  width:400px !important;
+.sub-menu-show {
+  width: 400px !important;
 }
-.sub-menu-hide{
-   width:200px !important;
+.sub-menu-hide {
+  width: 200px !important;
 }
-.m-left-show{
-  margin-left:400px !important;
+.m-left-show {
+  margin-left: 405px !important;
 }
-.m-left-hide{
-  margin-left:200px !important;
+.m-left-hide {
+  margin-left: 205px !important;
 }
 .right {
-  margin-left: 200px;
+  margin-left: 205px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.active-path {
+  border-left: 3px solid #2a23ad;
+  background: #f9f9f9;
 }
 </style>
