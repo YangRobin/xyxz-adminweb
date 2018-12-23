@@ -1,6 +1,7 @@
 <template>
   <div>
      <h1>this is  default home page!</h1>
+     <router-view />
   </div>
 </template>
   <script lang="ts">
