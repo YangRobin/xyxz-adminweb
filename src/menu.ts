@@ -1,8 +1,8 @@
 
 import Home from './views/Home.vue';
-import SubHome from './views/SubHome.vue';
-import About from './views/About.vue';
-import SubAbout from './views/SubAbout.vue';
+import User from './views/User.vue';
+import UserSurvey from './views/UserSurvey.vue';
+import AddUser from './views/AddUser.vue';
 import UserDelete from './views/UserDelete.vue';
 
 const menu = [
@@ -11,32 +11,24 @@ const menu = [
     icon: 'icon-home',
     path: '/',
     component: Home,
-    children: [
-      {
-        name: 'sub-home',
-        icon: 'sub-home',
-        path: '/sub-home',
-        component: SubHome,
-      },
-    ],
   },
   {
     name: '用户管理',
-    icon: 'about',
-    path: '/about',
-    component: About,
+    icon: 'user',
+    path: '/user',
+    component: User,
     children: [
       {
         name: '用户统计',
         icon: 'sub-about',
-        path: '/about/sub-about',
-        component: SubAbout,
+        path: '/user/user-survey',
+        component: UserSurvey,
       },
       {
         name: '用户新建',
         icon: 'sub-about',
-        path: '/about/userTotal',
-        component: SubAbout,
+        path: '/user/add-user',
+        component: AddUser,
       },
       {
         name: '用户删除',
