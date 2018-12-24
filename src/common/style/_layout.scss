@@ -1,3 +1,54 @@
+@for $i from 1 through $column {
+  .col-#{$i}{
+    width: #{$i/$column * 100 * 1%};
+  }
+  .col-lg-#{$i},.col-md-#{$i},.col-sm-#{$i}{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+  }
+}
+
+@media (min-width:$sm) {
+  .container {
+    max-width: $sm;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+
+  @for $i from 1 through $column {
+    .col-sm-#{$i} {
+      -webkit-box-flex: 0;
+      flex: 0 0 #{$i/$column * 100 * 1%};
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: #{$i/$column * 100 * 1%};
+    }
+
+    ;
+  }
+}
+@media (min-width:$md) {
+  .container {
+    max-width: $md;
+  }
+  .hidden-md{
+    display: none;
+  }
+
+  @for $i from 1 through $column { 
+      .col-md-#{$i} { 
+        -webkit-box-flex: 0;
+        flex: 0 0 #{$i/$column * 100 * 1%};
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: #{$i/$column * 100 * 1%};
+      };
+  }
+}
+
 @media (min-width:$lg) {
   .container {
     max-width: $lg;
@@ -10,47 +61,12 @@
   @for $i from 1 through $column {
     
     .col-lg-#{$i} {
+      -webkit-box-flex: 0;
+      flex: 0 0 #{$i/$column * 100 * 1%};
       flex-basis: 0;
       flex-grow: 1;
-      width: #{$i/$column*100};
+      max-width: #{$i/$column * 100 * 1%};
     }
-    .col-#{$i}{
-        width: #{$i/$column * 100 * 1%};
-    }
-
-    ;
-  }
-}
-
-// @media (min-width:$md) {
-//   .container {
-//     max-width: $md;
-//   }
-//   .hidden-md{
-//     display: none;
-//   }
-
-//   @for $i from 1 through $column { 
-//       .col-md-#{$i} { width: make-col($i) };
-//   }
-// }
-
-@media (max-width:$sm) {
-  .container {
-    max-width: $sm;
-  }
-
-  .hidden-sm {
-    display: none;
-  }
-
-  @for $i from 1 through $column {
-    .col-sm-#{$i} {
-      flex-basis: 0;
-      flex-grow: 1;
-      // width: make-col($i)
-    }
-
     ;
   }
 }
