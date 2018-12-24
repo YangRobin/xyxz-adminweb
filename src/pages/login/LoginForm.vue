@@ -11,7 +11,11 @@
             Sign in byentering the infomation below
         </div>
         <div class="form-item">
-          <label for="">图标</label>
+          <label for="">
+              <!-- <svg class="icon" aria-hidden="true" style="width:1em; height:1em;">
+                <use xlink:href="#icon-yonghu"></use>
+              </svg> -->
+          </label>
           <input type="text" placeholder="Designer">
         </div>
         <div class="form-item">
