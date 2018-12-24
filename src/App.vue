@@ -44,7 +44,6 @@ export default class App extends Vue {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #5c7ffc;
   position: relative;
   font-size: 14px;
@@ -67,9 +66,15 @@ li {
 //
 .left {
   width: 200px;
-  // background-color:blue;
+  min-height: 500px;
+  margin-top: 5px;
   height: 100%;
-  position: fixed;
+
+  // position: fixed;
+}
+
+main {
+  height: 100%;
 }
 //子菜单显示的样式
 .sub-menu-show {
@@ -90,7 +95,7 @@ li {
   margin-right: 5px;
 }
 .active-path {
-  border-left: 3px solid #2a23ad;
+  border-right: 3px solid #2a23ad;
   background: #f9f9f9;
 }
 </style>

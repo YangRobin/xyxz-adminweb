@@ -3,19 +3,19 @@
     <div class="main-menu">
       <div class="avator"></div>
       <ul class="links">
-        <li  v-for="i in menu" @click="toggle(i.name)">
-          <router-link :to="i.path">{{i.name}}</router-link>
+        <li  v-for="i in menu">
+            <router-link :to="i.path"> <i class="iconfont icon-check-circle" ></i>{{i.name}}</router-link>
         </li>
       </ul>
     </div>
-    <div class="sub-menu" v-show="subMenuVisible">
-      <span @click="closeSub()">X</span>
+    <!-- <div class="sub-menu" v-show="subMenuVisible">
+      <span @click="closeSub()"> <i class="icon-guanji iconfont"></i> </span>
       <ul>
         <li  class="active-path" v-for="i in subMenu">
           <router-link :to="i.path">{{i.name}}</router-link>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 <script lang="ts">
@@ -31,37 +31,37 @@ export default class LeftMenu extends Vue {
   mounted() {
     this.menu = menu;
   }
-  public toggle(name: string) {
-    //判断点击的路由 是否是当前路由
-    if (this.name === name) {
-      this.subMenuVisible = !this.subMenuVisible;
-      this.toggleSub(name);
-      const currentMenu = menu.find(i => {
-        return i.name === name;
-      });
-      this.subMenu = currentMenu ? currentMenu.children : {};
-    } else {
-      //
-      const currentMenu = menu.find(i => {
-        return i.name === name;
-      });
-      this.subMenu = currentMenu ? currentMenu.children : {};
-      if (this.subMenuVisible) {
-        this.name = name;
-      } else {
-        this.toggleSub(name);
-        this.subMenuVisible = true;
-      }
-    }
-  }
-  public closeSub() {
-    this.subMenuVisible = false;
-    this.toggleSub(this.name);
-  }
-  @Emit()
-  private toggleSub(e: any) {
-    console.info(e);
-  }
+  // public toggle(name: string) {
+  //   //判断点击的路由 是否是当前路由
+  //   if (this.name === name) {
+  //     this.subMenuVisible = !this.subMenuVisible;
+  //     this.toggleSub(name);
+  //     const currentMenu = menu.find(i => {
+  //       return i.name === name;
+  //     });
+  //     this.subMenu = currentMenu ? currentMenu.children : {};
+  //   } else {
+  //     //
+  //     const currentMenu = menu.find(i => {
+  //       return i.name === name;
+  //     });
+  //     this.subMenu = currentMenu ? currentMenu.children : {};
+  //     if (this.subMenuVisible) {
+  //       this.name = name;
+  //     } else {
+  //       this.toggleSub(name);
+  //       this.subMenuVisible = true;
+  //     }
+  //   }
+  // }
+  // public closeSub() {
+  //   this.subMenuVisible = false;
+  //   this.toggleSub(this.name);
+  // }
+  // @Emit()
+  // private toggleSub(e: any) {
+  //   console.info(e);
+  // }
 }
 </script>
 <style lang="scss" scoped>
@@ -70,9 +70,10 @@ export default class LeftMenu extends Vue {
   display: flex;
   height: 100%;
   .main-menu {
+   
     width: 230px;
     background-color: #ffffff;
-
+    height: 100%;
     .avator {
       margin-top: 10px;
       width: 50px;
@@ -93,6 +94,7 @@ export default class LeftMenu extends Vue {
     }
   }
   .sub-menu {
+     position: relative;
     flex: 1 1 auto;
     width: 60%;
     background-color: #fcfcfd;
