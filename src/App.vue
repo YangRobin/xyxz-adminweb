@@ -88,7 +88,7 @@ main {
 .m-left-hide {
   margin-left: 210px !important;
 
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 8px;
   border-radius: 3px 3px 0 0;
 }
