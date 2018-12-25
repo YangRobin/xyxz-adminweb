@@ -1,18 +1,19 @@
 <template>
   <div class="left-menu">
     <div class="main-menu">
-      <div class="avator"></div>
-      <div class="pers_name">
-          杨国凤薛文倩
-          <br>
-          <b>创办于2018/12/25</b>
+      <div class="avator">
+        <img src="../assets/avator.jpg" alt>
+      </div>
+      <div class="pers_name">ROBIN
+        <br>
+        <b>创办于2018/12/25</b>
       </div>
       <ul class="links">
-        <li  v-for="i in menu">
-            <router-link :to="i.path">
-               <i :class="i.icon"></i>
-               {{i.name}}
-            </router-link>
+        <li v-for="i in menu">
+          <router-link :to="i.path">
+            <i :class="i.icon"></i>
+            {{i.name}}
+          </router-link>
         </li>
       </ul>
     </div>
@@ -23,7 +24,7 @@
           <router-link :to="i.path">{{i.name}}</router-link>
         </li>
       </ul>
-    </div> -->
+    </div>-->
   </div>
 </template>
 <script lang="ts">
@@ -77,59 +78,63 @@ export default class LeftMenu extends Vue {
   color: #4e5f5b;
   display: flex;
   height: 100%;
-  box-shadow: 0px 0px 12px 0 rgba(7,17,27,.36);
+  box-shadow: 1px 1px 1px 1px rgba(229, 229, 229, 0.36);
+  margin: 10px 1px 0 5px;
   .main-menu {
-   color: #e6e6e6;
+    color: #e6e6e6;
     width: 230px;
-    background-color: #42485b;
+    background-color: #ffffff;
     height: 100%;
     padding: 15px 0px;
     .avator {
       margin: 0 auto;
       width: 50px;
       height: 50px;
-      background: #0a1213;
+      background: #ffbd23;
       border-radius: 50%;
       text-align: center;
-      img{
+      overflow: hidden;
+      box-shadow: 1px 1px 1px 1px #c3cbe3;
+      img {
         width: 100%;
         height: 100%;
       }
     }
-    .pers_name{
+    .pers_name {
       line-height: 20px;
       margin: 12px 0;
       text-align: center;
-      font-weight: 900;
-      font-size: 18px;
-      color: #00b7d3;
-      b{
-        color: #e6e6e6;
-        font-size: 9px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #000000;
+      b {
+        color: #adadad;
+        font-size: 10px;
       }
     }
     .links {
-      border-top: 1px solid #f5f5f7;
-      padding: 8px 0;  
+      text-align: center;
+      border-top: 2px solid #efefefb3;
+      padding: 8px 0;
       margin-top: 10px;
       li {
         position: relative;
         display: block;
         a {
           display: block;
-          color: #e6e6e6;
+          color: #5c7ffc;
           padding: 14px 20px 14px 25px;
           cursor: pointer;
           text-decoration: none;
-          font-weight: 700;
-          &:hover{ 
-            background-color: rgba(0,0,0,.09)!important;
-            color: #00b7d3; 
-            border-left: 3px solid #00b7d3;
-            transition: all .2s;
-            -webkit-transition:all .2s;
-            }
-          i{
+
+          &:hover {
+            background-color: rgba(161, 161, 161, 0.09) !important;
+            color: #5c7ffc;
+            border-left: 3px solid #5c7ffc;
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+          }
+          i {
             margin-right: 6px;
           }
         }
@@ -137,7 +142,7 @@ export default class LeftMenu extends Vue {
     }
   }
   .sub-menu {
-     position: relative;
+    position: relative;
     flex: 1 1 auto;
     width: 60%;
     background-color: #fcfcfd;
