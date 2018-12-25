@@ -2,9 +2,17 @@
   <div class="left-menu">
     <div class="main-menu">
       <div class="avator"></div>
+      <div class="pers_name">
+          杨国凤薛文倩
+          <br>
+          <b>创办于2018/12/25</b>
+      </div>
       <ul class="links">
         <li  v-for="i in menu">
-            <router-link :to="i.path"> <i class="iconfont icon-check-circle" ></i>{{i.name}}</router-link>
+            <router-link :to="i.path">
+               <i :class="i.icon"></i>
+               {{i.name}}
+            </router-link>
         </li>
       </ul>
     </div>
@@ -69,26 +77,61 @@ export default class LeftMenu extends Vue {
   color: #4e5f5b;
   display: flex;
   height: 100%;
+  box-shadow: 0px 0px 12px 0 rgba(7,17,27,.36);
   .main-menu {
-   
+   color: #e6e6e6;
     width: 230px;
-    background-color: #ffffff;
+    background-color: #42485b;
     height: 100%;
+    padding: 15px 0px;
     .avator {
-      margin-top: 10px;
+      margin: 0 auto;
       width: 50px;
       height: 50px;
       background: #0a1213;
       border-radius: 50%;
       text-align: center;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
-    ul {
+    .pers_name{
+      line-height: 20px;
+      margin: 12px 0;
+      text-align: center;
+      font-weight: 900;
+      font-size: 18px;
+      color: #00b7d3;
+      b{
+        color: #e6e6e6;
+        font-size: 9px;
+      }
+    }
+    .links {
+      border-top: 1px solid #f5f5f7;
+      padding: 8px 0;  
       margin-top: 10px;
       li {
-        height: 26px;
-        line-height: 26px;
+        position: relative;
+        display: block;
         a {
-          color: #5c7ffc;
+          display: block;
+          color: #e6e6e6;
+          padding: 14px 20px 14px 25px;
+          cursor: pointer;
+          text-decoration: none;
+          font-weight: 700;
+          &:hover{ 
+            background-color: rgba(0,0,0,.09)!important;
+            color: #00b7d3; 
+            border-left: 3px solid #00b7d3;
+            transition: all .2s;
+            -webkit-transition:all .2s;
+            }
+          i{
+            margin-right: 6px;
+          }
         }
       }
     }

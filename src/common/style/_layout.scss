@@ -25,8 +25,8 @@
       flex-basis: 0;
       flex-grow: 1;
       max-width: #{$i/$column * 100 * 1%};
+      padding: 0 10px;
     }
-
     ;
   }
 }
@@ -45,6 +45,7 @@
         flex-basis: 0;
         flex-grow: 1;
         max-width: #{$i/$column * 100 * 1%};
+        padding: 0 10px;
       };
   }
 }
@@ -66,6 +67,7 @@
       flex-basis: 0;
       flex-grow: 1;
       max-width: #{$i/$column * 100 * 1%};
+      padding: 0 10px;
     }
     ;
   }

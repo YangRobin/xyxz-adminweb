@@ -5,6 +5,9 @@
 html,body{
   height: 100%;
 }
+*{
+  box-sizing: border-box;
+}
 body,ul{
   padding:0;
   margin:0,
@@ -31,4 +34,6 @@ a{
 .row{
   display:flex;
   flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
 }

@@ -22,15 +22,18 @@ export default class Navbar extends Vue {
   // position: fixed;
   // width: 100%;
   // top:0;
-  color: #5c7ffc;
+  color: #e6e6e6;
   height: 50px;
   line-height: 50px;
-  background: white;
+  background: #373d41;
+ 
   a {
     display: block;
     width: 200px;
     float: left;
     color: inherit;
+    padding-left: 10px;
+    box-sizing: border-box;
   }
   ul {
     float: right;
