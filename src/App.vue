@@ -67,7 +67,6 @@ li {
 .left {
   width: 200px;
   min-height: 500px;
-  margin-top: 5px;
   height: 100%;
 
   // position: fixed;
@@ -87,11 +86,14 @@ main {
   margin-left: 405px !important;
 }
 .m-left-hide {
-  margin-left: 205px !important;
+  margin-left: 210px !important;
+  background: #fff;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 3px 3px 0 0;
 }
 .right {
   margin-left: 205px;
-  margin-top: 5px;
   margin-right: 5px;
 }
 .active-path {

@@ -33,8 +33,7 @@ export default class BreadCut extends Vue {
     temp.forEach((item: any) => {
       this.getName(menu, item);
     });
-  }
-
+  } 
   getName(menu: any, path: string) {
     return menu.find((i: any) => {
       if (i.path === path) {
@@ -45,15 +44,15 @@ export default class BreadCut extends Vue {
         }
       }
     });
-  }
+  } 
 }
 </script>
 <style lang="scss" scoped>
 .bread-cut {
-  background-color: white;
-  padding: 5px 5px;
-  color: #999999;
+  padding: 5px 0 10px 10px;
+  color: #333;
   font-size: 12px;
+  border-bottom: 1px solid #f6f6f6;
   li {
     float: left;
     list-style: none;

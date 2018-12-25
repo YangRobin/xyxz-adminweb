@@ -8,13 +8,13 @@ import UserDelete from './views/UserDelete.vue';
 const menu = [
   {
     name: '首页统计',
-    icon: 'icon-home',
+    icon: 'iconfont icon-shouye',
     path: '/',
     component: Home,
   },
   {
     name: '用户管理',
-    icon: 'user',
+    icon: 'iconfont icon-yonghu',
     path: '/user',
     component: User,
     children: [
