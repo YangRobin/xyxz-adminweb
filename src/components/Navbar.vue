@@ -22,11 +22,12 @@ export default class Navbar extends Vue {
   // position: fixed;
   // width: 100%;
   // top:0;
-  color: #e6e6e6;
+  color: #5c7ffc;
   height: 50px;
   line-height: 50px;
-  background: #373d41;
- 
+  background: #ffffff;
+  box-shadow: 0 2px 0px 0 rgb(237, 237, 237);
+
   a {
     display: block;
     width: 200px;
