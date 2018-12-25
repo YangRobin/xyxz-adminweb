@@ -58,6 +58,7 @@ export default class BreadCut extends Vue {
   height: 30px;
   font-weight: 500;
   width: 50%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
   li {
     float: left;
     list-style: none;
