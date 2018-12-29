@@ -49,22 +49,30 @@ export default class BreadCut extends Vue {
 </script>
 <style lang="scss" scoped>
 .bread-cut {
-  padding: 5px 0 10px 10px;
+  padding-left:10px;
   color: #7188fc;
   font-size: 13px;
   border-bottom: 1px solid #f6f6f6;
   background: white;
   border-left: 2px solid #65c465;
   height: 30px;
+  line-height: 30px;
   font-weight: 500;
-  width: 50%;
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
-  li {
-    float: left;
-    list-style: none;
-    margin-right: 10px;
-    a {
-      text-decoration: none;
+  ul{
+      overflow: hidden;
+      height: 30px;
+      background: #c028c01a;
+      color: #4e5f5b;
+      min-width: 60px;
+      border-radius: 3px;
+     li {
+      float: left;
+      list-style: none;
+      margin-right: 10px;
+      a {
+        text-decoration: none;
+      }
     }
   }
 }

@@ -12,14 +12,14 @@
         </div>
         <div class="form-item">
           <label for="">
-              <!-- <svg class="icon" aria-hidden="true" style="width:1em; height:1em;">
-                <use xlink:href="#icon-yonghu"></use>
-              </svg> -->
+             <i class="iconfont icon-yonghu"></i>
           </label>
           <input type="text" placeholder="Designer">
         </div>
         <div class="form-item">
-          <label for="">密码</label>
+          <label for="">
+            <i class="iconfont icon-mima"></i>
+          </label>
           <input type="text" name="passworld" placeholder="......">
         </div>
         <p class="form-bj">
@@ -31,6 +31,9 @@
         <button class="out">Sign up</button>
           <!-- <el-button type="primary">主要按钮</el-button> -->
       </div>
+     </div>
+     <div class="form_r">
+        <img src="../../assets/logo1.png" alt="png">
      </div>
    </div>
 </template>
@@ -130,6 +133,15 @@ export default class LoginForm extends Vue {
            outline: none;
          }
        }
+    }
+    .form_r{
+      float: right;
+      width: 450px;
+      text-align: center;
+      img{
+        width: 400px;
+        height: 400px;
+      }
     }
   }
 </style>
